@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>Webinar</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all"/>
+      <link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all" />
+      <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#ffffff" stroke-width="3"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+      <!--Wrapper-->
+      <div class="wrapper">
+         <!--Hero section-->
+         <section class="hero">
+            <!--Header-->
+            <header class="header default">
+               <div class=" left-part">
+                  <a class="logo scroll" href="#hero">
+                     <h2><span>Claudia Gurría</h2>
+                  </a>
+               </div>
+               <div class="right-part">
+                  
+               </div>
+            </header>
+            <!--End header-->
+            <!--Inner hero-->
+            <div class="inner-hero">
+               <!--Container-->
+               <div class="container hero-content">
+
+    <iframe
+      id="JotFormIFrame-231006098177859"
+      title="Formulario Claudia Gurria"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/231006098177859"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-231006098177859");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </footer>
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->	
+      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+      <script src="js/owl.carousel.js" type="text/javascript"></script>
+      <script src="js/venobox.min.js" type="text/javascript"></script>
+      <script src="js/smooth-scroll.js" type="text/javascript"></script>
+      <script src="js/placeholders.min.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
+</html>
+
